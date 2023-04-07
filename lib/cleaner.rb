@@ -6,12 +6,7 @@ class Cleaner
 
   def parse_output
     File.readlines(@filepath).each do |line|
-      url = line.split("|")[1]
-      if url
-        @entries.append(line) unless @entries.include?(line)
-      else
-        @entries.append(line)
-      end
+      @entries.append(line) unless @entries.include?(line)
     end
   end
 
