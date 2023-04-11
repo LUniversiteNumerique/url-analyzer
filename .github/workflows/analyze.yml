@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: "https://github.com/LUniversiteNumerique/url-analyzer.git"
+          repository: "LUniversiteNumerique/url-analyzer"
           ref: "report"
       - uses: ruby/setup-ruby@v1
         with:
