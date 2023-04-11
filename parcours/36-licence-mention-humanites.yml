@@ -1,0 +1,39 @@
+id: 36
+name: "Licence mention humanités"
+description: |
+  Ce parcours type met à disposition des ressources éducatives libres pour enseigner les différentes 
+  disciplines de cette formation, rassemblées autour d’un tronc commun correspondant à ce qu’on appelle 
+  traditionnellement les humanités : <strong>lettres, philosophie, histoire, culture classique</strong>. 
+  Il propose également des contenus pour l’étude renforcée de <strong>langues vivantes</strong> et des 
+  <strong>enseignements transversaux</strong> (compétences informatiques, méthodologie).
+  <p>* Une authentification est obligatoire car imposée par la technologie Moodle. Il est par conséquent nécessaire de créer un compte gratuitement ou de se connecter avec ses identifiants universitaires.
+  ** MOOC accessible uniquement aux enseignants et sur demande, hors session en cours.<p/>
+years:
+  - name: "1re année"
+    ue:
+      - name: "Histoire ancienne et moderne"
+        resources:
+          - name: "Les mondes anciens"
+            type: "Grain ou élément de cours"
+            volume: "2h"
+            url: "https://www.canal-u.tv/producteurs/universite_paris_1_pantheon_sorbonne/decouper_le_temps_les_periodes_de_l_histoire/les_mondes_anciens"
+          - name: "Politique, religions, constructions étatiques : les pratiques du pouvoir"
+            type: "Cours complet ou MOOC"
+            volume: "12h"
+            url: "https://uoh.fr/front/noticefr/?uuid=b22e4e4b-4459-432f-a43f-a1797f80eac3"
+          - name: "L’art de gouverner à Florence (1494-1530)"
+            type: "Cours complet ou MOOC"
+            volume: "25h"
+            url: "https://www.canal-u.tv/chaines/ens-de-lyon/l-art-de-gouverner-a-florence-1494-1530"
+          - name: "Les ruptures de l’époque moderne"
+            type: "Grain ou élément de cours"
+            volume: "1h"
+            url: "https://www.canal-u.tv/chaines/universite-paris-1/les-ruptures-de-l-epoque-moderne"
+          - name: "18e siècle : le combat des Lumières"
+            type: "Cours complet ou MOOC **"
+            volume: "12h"
+            url: "https://www.fun-mooc.fr/fr/cours/18e-siecle-le-combat-des-lumieres/"
+          - name: " Arausio"
+            type: "TP, exercice, quiz"
+            volume: "1h"
+            url: "https://ikigai.games/games/gameDetails/100"
