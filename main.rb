@@ -14,7 +14,7 @@ output_file.puts "| ----------- | ----------- |"
 output_file.close
 
 # Parse the files
-dir = "./parcours"
+dir = "./parcours-hybridation"
 files = Dir.glob("#{dir}/**/*.yml") do | file |
   yamlfile = YAML.load_file(file)
   analyzer = Analyzer.new yamlfile
