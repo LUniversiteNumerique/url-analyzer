@@ -24,7 +24,6 @@ jobs:
       - name: Commit report
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
-          git checkout -b 'report'
           git pull origin main --rebase --allow-unrelated-histories
           git config --global user.name 'Report'
           git config --global user.email 'report@users.noreply.github.com'
