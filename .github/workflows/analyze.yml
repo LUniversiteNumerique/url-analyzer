@@ -15,9 +15,12 @@ jobs:
           rm -rf parcours-hybridation
           git clone https://github.com/LUniversiteNumerique/parcours-hybridation.git
       - run: ruby main.rb
+      - name: Check changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit report
         run: |
-          git stash
           git checkout -b 'report'
           git pull origin main --allow-unrelated-histories
           git config --global user.name 'Report'
