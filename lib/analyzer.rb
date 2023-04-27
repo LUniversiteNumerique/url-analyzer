@@ -22,7 +22,7 @@ class Analyzer
     url.to_s =~ url_regexp ? true : false
   end
 
-  def is_valid_url?(url_string)
+  def is_valid_status_code?(url_string)
     require "net/http"
 
     begin
@@ -67,12 +67,15 @@ class Analyzer
 
   def start(output_file_path)
     output_file = File.open(output_file_path, "a")
-
+    
+    urls_array = []
     traverse(file) do |node|
-      if valid_url?(node)
-        status_code = is_valid_url?(node)
-        output_file.puts "| #{node} | #{status_code} |" if status_code     
-      end
+      urls_array |= [node] if valid_url?(node)
+    end
+
+    urls_array.each do |url|
+      status_code = is_valid_status_code?(url)
+      output_file.puts "| #{url} | #{status_code} |" if status_code     
     end
 
     output_file.close unless output_file.nil?
