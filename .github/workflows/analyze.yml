@@ -40,4 +40,4 @@ jobs:
           git config --global user.email 'report@users.noreply.github.com'
           git add .
           git commit -am "Automated report"
-          git push --set-upstream origin report
+          git push -f --set-upstream origin report
