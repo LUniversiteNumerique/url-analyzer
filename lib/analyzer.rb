@@ -75,6 +75,7 @@ class Analyzer
 
     urls_array.each do |url|
       status_code = is_valid_status_code?(url)
+      puts "[#{status_code}]\t#{url}"
       output_file.puts "| #{url} | #{status_code} |" if status_code     
     end
 
